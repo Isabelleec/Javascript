@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <form>
+    <input type="text" id="name">
+    <button type="button" id="btnSave">Spara</button>
+ </form>       
+
+<script>
+
+
+document.addEventListener("DOMContentLoaded", function()
+{
+    let button = document.getElementById("btnSave");
+    let textbox = document.getElementById("name");
+
+    button.addEventListener("click", function(){
+        let name = textbox.value;
+
+        console.log(name)
+
+    })
+
+
+})
+
+
+</script>
+
+</body>
+</html>
